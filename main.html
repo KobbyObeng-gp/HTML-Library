@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .myDiv {
+      border: 7px outset Blue;
+      background-color: green;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+  <link rel="stylesheet" href="styles.css">
+<body>
+  <h1>Book Store</h1>  
+  <p>Come and order some books with us:</p>
+  <ol>
+    <li>Psychology of Money</li>
+    <li>Atomic Habits</li>
+    <li>Awe of God</li>
+    <li>God or Good?</li>
+  </ol>
+
+  <h1>Welcome to the Book Library</h1>
+  <div class="myDiv">
+    <h2>Psychology of Money</h2>
+    <img src="https://tse4.mm.bing.net/th?id=OIP.hffnWVo_ct4qsCW8CKSJggHaLc&pid=Api&P=0&h=180" alt="Psychology of Money" />
+    <button id="descriptionButton" onclick="showDetails()">
+      <i>Press to find out more</i>
+    </button>
+    <p id="descriptionText" style="visibility: hidden;">This is a book about the psychology of money and the power of saving.</p>
+  
+
+  <script>
+    function showDetails() {
+      var element = document.getElementById("descriptionText");
+      if (element.style.visibility === "hidden") {
+        element.style.visibility = "visible";
+      } else {
+        element.style.visibility = "hidden";
+      }
+    }
+  </script>
+
+  <h2>Awe Of God</h2>
+  <img src="https://tse4.mm.bing.net/th?id=OIP.qfmdnBWNJUa5SuWr1J9yHwHaJK&pid=Api&P=0&h=180" alt="Awe Of God" />
+  <button id="descriptionButton2" onclick="AweOfGodFunc()">
+    <i>Press to find out more</i>
+  </button>
+  <p id="AweOfGodText" style="visibility: hidden;">This is a book about the reverence and awe of God and its impact on life.</p>
+
+  <script>
+    function AweOfGodFunc() {
+      var entity = document.getElementById("AweOfGodText");
+      if (entity.style.visibility === 'hidden') {
+        entity.style.visibility = 'visible';
+      } else {
+        entity.style.visibility = 'hidden';
+      }
+    }
+  </script>
+    
+    <h2>Atomic habits</h2>
+    <img src="https://tse2.mm.bing.net/th?id=OIP.N47nvI5m1bZilWOmict9bQAAAA&pid=Api&P=0&h=180" alt="Atomic Habits" />
+    <button id = "DescriptionText3" onclick = "AtomicHabitsFunc()">
+      <i>press to find out more</i>
+    </button>
+    <p id = 'AtomicHabitsText' style= "visibility:hidden;">this book is about building the right habits to be properous in life</p> 
+    <script> 
+      function AtomicHabitsFunc() {
+        var Hold = document.getElementById("AtomicHabitsText");
+        if(Hold.style.visibility === "hidden") {
+          Hold.style.visibility = "visible";
+        } else {
+          Hold.style.visibility = "hidden";
+        }
+      }
+    </script>
+<h2>God or Good?</h2>
+<img src="https://tse1.mm.bing.net/th?id=OIP.1QoMKXKV3QUesC83PMuwswAAAA&pid=Api&P=0&h=180" alt="God or Good?">
+<button id="Description4" onclick="GodOrGood()">
+  <i> press here to find out more </i>
+</button>
+<p id="AweOfGodDescription" style="visibility:hidden">The book dives deep into why people sometimes feel disconnected from God and how they can develop a deeper, more personal relationship with Him </p>
+
+<script>
+  function GodOrGood() {
+    var Contain = document.getElementById("AweOfGodDescription");
+    if (Contain.style.visibility === "hidden") {
+      Contain.style.visibility = "visible";
+    } else {
+      Contain.style.visibility = "hidden";
+    }
+  }
+</script>
